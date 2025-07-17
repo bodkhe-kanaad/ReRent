@@ -7,26 +7,25 @@ public class UserSignup {
 
     private static Scanner input = new Scanner(System.in);         // Using the scanner class to read inputs from user, calling it input
 
-    
     public static void userSignUp() throws SQLException{
 
     System.out.println("What is your first name ?");                           
-    String firstname = input.next();
+    String firstname = input.next();                                // Input First Name
     
     System.out.println("What is your last name ?");                            
-    String lastname = input.next();
+    String lastname = input.next();                                 // Input Last Name
 
     System.out.println("What is your contact number?");
-    String contactnumber = input.next();
+    String contactnumber = input.next();                            // Input Contact Number
 
     System.out.println("What is your email id ?");
-    String email = input.next();
+    String email = input.next();                                    // Input Email Id
 
     System.out.println("What would you like to be your username ?");
-    String userName = input.next();
+    String userName = input.next();                                 // Input Username
 
     System.out.println("What would you like to be your password ?");
-    String password = input.next();
+    String password = input.next();                                 // Input Password
 
     User user = new User(0, firstname, lastname, contactnumber, email, userName, password); // Making a new user
 
@@ -41,9 +40,11 @@ public class UserSignup {
         stmt.setString(6, user.getPassword());
         int rowsInserted = stmt.executeUpdate();
 
-            // Checking if the user details have been added to the database
+            // Checking if the user details have been added to the database.
             if (rowsInserted == 1) {
                 System.out.println("You have been registered successfully!");
+                System.out.println("Procced to Login");
+                UserLogin.userlogin();
             } else {
                 System.out.println("Something went wrong. Please try again.");
             }

@@ -2,12 +2,12 @@
 // The user object represents a user who will login to the web application for borrowing or lending various items
 
 public class User {
-    private final  int    userId;                //unique id for each user
+    private final  int    userId;                  // Unique id for each user
     private final String firstName;               // User first name 
     private final String lastName;               // User last name 
     private  String contactNumber;              // User contact number 
     private  String email;                     // User email 
-    private final String userName;            //User username 
+    private final String userName;            // User username 
     private  String password;                // User password
 
     // This is a constructor for the user
@@ -21,7 +21,7 @@ public class User {
         this.password = password;  
     }
 
-// Getter's for user
+// Getters for user
 public int getUserId() {
         return userId;
     }
