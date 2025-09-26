@@ -26,18 +26,16 @@ _ReRent_ is a peer-to-peer short-term item lending and borrowing platform built 
 
 ---
 
-## 🧱 Folder Structure
-ReRent/
-├── src/
-│ ├── models/ # Item, User, Request classes
-│ ├── services/ # Logic for registration, login, item listings, etc.
-│ ├── db/ # PostgreSQL database access
-│ ├── ui/ # CLI interface logic
-│ └── ReRentApp.java # Main program entry point
-├── resources/
-│ └── db.properties # Your DB credentials and URL
-├── test/ # Unit tests (JUnit)
-└── README.md # This file
+## 📂 Project Structure
+
+The project follows a modular structure for clarity and scalability:
+
+- **src/** → Main source code (models, services, database access, UI)
+- **resources/** → Configuration files (e.g., DB properties)
+- **test/** → Unit tests using JUnit
+- **ReRentApp.java** → Main entry point of the application
+- **README.md** → Documentation
+
 
 ---
 
@@ -97,4 +95,5 @@ You can run unit tests using your IDE or a build tool like Maven or Gradle.
 👤 Author
 Kanaad Bodkhe
 UBC Computer Science
+
 
